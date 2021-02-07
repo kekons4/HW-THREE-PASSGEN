@@ -27,3 +27,12 @@ the length and type of characters they want generated.
 
 ![Screenshot seven](/assets/screenshots/screenshot_seven.png)
 ##### screenshot of generated password
+
+## Installation
+Clone the repository at https://github.com/kekons4/HW-THREE-PORTFOLIO.git add load it on code editor of your choice. Vscode is the prefered editor.
+
+## Credits
+Keon Pourboghrat https://github.com/kekons4
+
+## License
+No License
