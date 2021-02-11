@@ -15,7 +15,7 @@ function generatePassword() {
   // what will be returned
   let output = "";
   
-  // used to generate the random password 
+  // separate sets for lowercase, uppercase, numeric characters, and special characters 
   let lowerSet = "abcdefghijklmnopqrstuvwxyz";
   let upperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let numSet = "0123456789";
@@ -25,7 +25,6 @@ function generatePassword() {
   let passwordLen = Number(prompt("Enter a length between 8 and 128 characters: "));
 
   // This checks whether the user entered a valid value, if not try again.
-  
   while(Number.isInteger(passwordLen) === false || passwordLen < 8 || passwordLen > 128) {
     alert("Try again...");
     passwordLen = Number(prompt("Enter a length between 8 and 128 characters: "));
@@ -51,7 +50,7 @@ function generatePassword() {
   for(let i = 0; i < passwordLen; i++) {
 
     // Logic table that goes through all possible outcomes of what the user can choose
-    
+
     // Lowercase: false | uppercase: false | numbers: false | special characters: true
     if(lower === false && upper === false && numeric === false && special === true) {
       output += specialSet.charAt(Math.floor(Math.random() * specialSet.length));
